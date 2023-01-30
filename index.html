@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body class="flex content-center align-center">
+    <div class="container flex column">
+        <div class="calculator flex column">
+            <div class="calculator__bill flex column">
+                <label class="bill__label">
+                    Bill
+                </label>
+                <input type="number" class="bill__input" min="0" placeholder="0">
+            </div>
+            <div class="calculator__tip flex column">
+                <label class="tip__label">
+                    Select Tip
+                </label>
+                <button type="button" class="tip__button" value="5">
+                    5%
+                </button>
+                <button type="button" class="tip__button" value="10">
+                    10%
+                </button>
+                <button type="button" class="tip__button" value="15">
+                    15%
+                </button>
+                <button type="button" class="tip__button" value="20">
+                    20%
+                </button>
+            </div>
+        </div>
+        <div class="results flex column">
+            <div class="results__container flex row">
+                <div class="container__text flex column">
+                    <span>
+                        Tip Amount
+                    </span>
+                    <span>
+                        Total
+                    </span>
+                </div>
+                <div class="container__numbers flex column">
+                    <span>
+                        $0.00
+                    </span>
+                    <span>
+                        $0.00
+                    </span>
+                </div>
+            </div>
+            <button type="button" class="results__button">
+                RESET
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --brown: #3C2A21;
+    --darkwhite: #ECECEC;
+    --white: white;
+}
+.flex {
+    display: flex;
+}
+.content-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+body {
+    background-color: var(--brown);
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px);
+}
+.container {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+.calculator {
+    gap: 1rem;
+}
+.calculator__bill {
+    gap: 0.2rem;
+}
+.bill__label {
+
+}
+.bill__input {
+    outline: none;
+    background-color: var(--darkwhite);
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+}
+.calculator__tip {
+    gap: 0.6rem;
+}
+.tip__label {
+    
+}
+.tip__button {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 0.5rem 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.results {
+    background-color: var(--brown);
+    border-radius: 5px;
+    color: var(--white);
+    padding: 1rem;
+    gap: 0.6rem;
+}
+.results__container {
+    gap: 2rem;
+}
+.results__button {
+    background-color: var(--darkwhite);
+    padding: 0.5rem 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
