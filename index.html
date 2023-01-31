@@ -14,22 +14,22 @@
                 <label class="bill__label">
                     Bill
                 </label>
-                <input type="number" class="bill__input" min="0" placeholder="0">
+                <input type="number" class="bill__input js-bill" min="0" placeholder="0">
             </div>
             <div class="calculator__tip flex column">
                 <label class="tip__label">
                     Select Tip
                 </label>
-                <button type="button" class="tip__button" value="5">
+                <button type="button" class="tip__button js-tip-btn" value="5">
                     5%
                 </button>
-                <button type="button" class="tip__button" value="10">
+                <button type="button" class="tip__button js-tip-btn" value="10">
                     10%
                 </button>
-                <button type="button" class="tip__button" value="15">
+                <button type="button" class="tip__button js-tip-btn" value="15">
                     15%
                 </button>
-                <button type="button" class="tip__button" value="20">
+                <button type="button" class="tip__button js-tip-btn" value="20">
                     20%
                 </button>
             </div>
@@ -45,18 +45,19 @@
                     </span>
                 </div>
                 <div class="container__numbers flex column">
-                    <span>
+                    <span class="js-tip">
                         $0.00
                     </span>
-                    <span>
+                    <span class="js-total">
                         $0.00
                     </span>
                 </div>
             </div>
-            <button type="button" class="results__button">
+            <button type="button" class="results__button js-reset-btn">
                 RESET
             </button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

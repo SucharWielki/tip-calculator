@@ -4,6 +4,7 @@
     --brown: #3C2A21;
     --darkwhite: #ECECEC;
     --white: white;
+    --lightbrown: #866457;
 }
 .flex {
     display: flex;
@@ -35,6 +36,7 @@ body {
     border-radius: 10px;
     padding: 1.5rem;
     gap: 2rem;
+    width: 80%;
 }
 .calculator {
     gap: 1rem;
@@ -42,21 +44,16 @@ body {
 .calculator__bill {
     gap: 0.2rem;
 }
-.bill__label {
-
-}
 .bill__input {
     outline: none;
     background-color: var(--darkwhite);
     border: none;
     border-radius: 5px;
     padding: 0.3rem 0.7rem;
+    box-shadow: 4px 6px 10px -5px rgb(163, 162, 162);
 }
 .calculator__tip {
     gap: 0.6rem;
-}
-.tip__label {
-    
 }
 .tip__button {
     background-color: var(--brown);
@@ -66,6 +63,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 2px 5px 10px 0 grey;
 }
 .results {
     background-color: var(--brown);
@@ -75,7 +73,7 @@ body {
     gap: 0.6rem;
 }
 .results__container {
-    gap: 2rem;
+    justify-content: space-between;
 }
 .results__button {
     background-color: var(--darkwhite);
@@ -85,4 +83,35 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
+}
+
+.tip__button:hover {
+    background-color: var(--lightbrown);
+}
+.results__button:hover {
+    background-color: var(--lightbrown);
+    color: var(--white);
+}
+.container__numbers {
+    text-align: right;
+}
+@media (min-width: 768px) {
+    * {
+        font-size: 18px;
+    }
+    .container {
+        flex-direction: row;
+    }
+    .calculator {
+        width: 50%;
+    }
+    .results {
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1000px) {
+    .container {
+        width: 50%;
+    }
 }
